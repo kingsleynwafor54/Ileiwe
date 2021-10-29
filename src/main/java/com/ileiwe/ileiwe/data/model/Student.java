@@ -1,4 +1,4 @@
-package com.ileiwe.ileiwe.model;
+package com.ileiwe.ileiwe.data.model;
 
 import lombok.Data;
 

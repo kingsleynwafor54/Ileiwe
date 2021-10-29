@@ -1,6 +1,8 @@
-package com.ileiwe.ileiwe.model;
+package com.ileiwe.ileiwe.data.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
@@ -9,6 +11,8 @@ import java.util.List;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,4 +33,8 @@ public class Course {
     private Instructor instructor;
     @ManyToMany
     private List<Student> students;
+
+    public Course(String title){
+        this.title=title;
+    }
 }
