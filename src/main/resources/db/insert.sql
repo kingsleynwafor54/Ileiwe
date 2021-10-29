@@ -21,6 +21,11 @@ truncate table authority;
 truncate table instructor;
 
 
+insert into learning_party(`id`,`email`,`password`,`enabled`)
+values (110,'nuel@gmail.com','okany122',false),
+(11,'nuel1@gmail.com','okany123',false),
+(112,'nuel2@gmail.com','okany124',false);
+
 set foreign_key_checks=1;
 
 

@@ -31,8 +31,8 @@ public class Instructor {
     private String lastName;
     @Enumerated(EnumType.STRING)
     private Gender gender;
-    @NotNull
-    @NotBlank
+//    @NotNull
+//    @NotBlank
     private String specialization;
     @Column(length=1000)
     private String bio;
